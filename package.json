@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/0x4all/slog#readme",
   "dependencies": {
+    "semver": "^5.6.0",
     "pomelo-logger": "^0.1.7"
   }
 }
