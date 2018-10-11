@@ -1,0 +1,22 @@
+{
+  "name": "slog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0x4all/slog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0x4all/slog/issues"
+  },
+  "homepage": "https://github.com/0x4all/slog#readme",
+  "dependencies": {
+    "pomelo-logger": "^0.1.7"
+  }
+}
