@@ -23,7 +23,9 @@ var _add_begin = function(logger)
             var strArg = arg + "";
             if(strArg === '[object Object]')
             {
-                str += JSON.stringify(arg)+ ", ";
+                try{
+                    str += JSON.stringify(arg)+ ", ";
+                }catch(e){ console.warn(e.message, arg);}
             }
             else if(strArg === '[object Arguments]')
             {
@@ -53,11 +55,15 @@ var _args2String = function(args)
             var s = args[arg] + "";
             if (s === '[object Object]')
             {
-                str +=  JSON.stringify(args[arg]) + "|";
+                try{
+                    str +=  JSON.stringify(args[arg]) + "|";
+                }catch(e){ console.warn(e.message, arg);}
             }
             else if (s === '[object Arguments]')
             {
-                str +=  JSON.stringify(args[arg]) + "|";
+                try{
+                    str +=  JSON.stringify(args[arg]) + "|";
+                }catch(e){ console.warn(e.message, arg);}
             }
             else
             {
