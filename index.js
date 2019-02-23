@@ -95,7 +95,8 @@ var logger = {
 	setGlobalLogLevel: pomelologger.setGlobalLogLevel,
 
 	layouts: pomelologger.layouts,
-	appenders: pomelologger.appenders
+    appenders: pomelologger.appenders,
+    Agent: require("./lib/agent"),
 };
 
 module.exports = logger;
