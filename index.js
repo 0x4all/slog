@@ -39,7 +39,7 @@ var _add_begin = function(logger)
         //str = str.substr(0,str.length - 2);
         str += " ];";
 
-        logger.trace(str);
+        logger.debug(str);
     };
 
     return logger;
